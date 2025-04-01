@@ -4,6 +4,12 @@
     --cinza: rgb(221, 220, 220);
     --verde: rgb(6, 184, 6);
     --verdec: rgb(82, 219, 82);
+    --corprojeto1: rgb(172, 10, 10);
+    --corprojeto2: rgb(224, 16, 16);
+    --corprojeto3: rgb(151, 42, 42);
+    --corprojeto4: rgb(170, 170,21);
+    --corprojeto5: rgb(247, 247, 7);
+    --corprojeto6: rgb(255, 136, 0);    
 }
 
 /* Configurações do site */
@@ -15,8 +21,13 @@
 
 html{font-family: Arial, Helvetica, sans-serif; font-size: 1em;}
 
-header{background-color: var(--preto); color: var(--branco); padding: 1%; position: fixed;
-  width: 100%;}
+header{
+    background-color: var(--corprojeto1); 
+    color: var(--branco); 
+    position: fixed;
+    width: 100%;
+    margin: 0;
+}
 
 nav{display: block; text-align: center; font-size: 1.3em; word-spacing: 10px;}
 
@@ -60,6 +71,11 @@ h1, h2, h3, h4, h5, h6{padding-top: 0.5%; padding-bottom: 0.5%;}
 
 /* Configurações de imagem */
 img{width: 100%; padding-top: 2%;}
+#topo{width: 400px; height: 130px; display: block; margin: auto;}
+
+@media(min-width: 320px) and (max-width: 1024px){
+    #topo{width: 340px; height: 100px; display: block; margin: auto;}    
+}
 
 /* Configurações de parágrafos */
 p{padding-top: 1%; padding-bottom: 1%;}
@@ -69,13 +85,13 @@ p{padding-top: 1%; padding-bottom: 1%;}
     p{padding-top: 3%; padding-bottom: 3%;}
 }
 
-/* Divs */
-.separador{margin-top: 8%;}
+/* Configurações de separadores com Divs */
+.separador{margin-top: 10%;}
 .separador-conteudo{margin-top: 0.5%;}
 
  /* Configurações de divs para dispositivos móveis */
  @media(min-width: 320px) and (max-width: 1024px){
-    .separador{margin-top: 27%;}
+    .separador{margin-top: 30%;}
     .separador-conteudo{margin-top: 1%;}
  }
 
